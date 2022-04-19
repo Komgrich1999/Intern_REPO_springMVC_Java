@@ -1,21 +1,17 @@
 package com.internship.backend.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
-public class Disease {
+public class disease {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private String disease_name;
+    private String diseaseName;
 // private Object disease_data;
     // private <FILE OF DISEASE DATA LOCATION>
-    private String FILE_LOCATION;
+    private String fileLocation;
 
 //    @ManyToMany(fetch = FetchType.LAZY,
 //            cascade = {
@@ -29,22 +25,22 @@ public class Disease {
         this.id = id;
     }
 
-    public void setDisease_name(String disease_name) {
-        this.disease_name = disease_name;
+    public void setDiseaseName(String diseaseName) {
+        this.diseaseName = diseaseName;
     }
 
-    public void setFILE_LOCATION(String FILE_LOCATION) { this.FILE_LOCATION = FILE_LOCATION; }
+    public void setFileLocation(String fileLocation) { this.fileLocation = fileLocation; }
 
     public long getDisease_ID() {
         return id;
     }
 
-    public String getDisease_name() {
-        return disease_name;
+    public String getDiseaseName() {
+        return diseaseName;
     }
 
-    public String getFILE_LOCATION() {
-        return FILE_LOCATION;
+    public String getFileLocation() {
+        return fileLocation;
     }
 
 //    public Set<User> getUser() {

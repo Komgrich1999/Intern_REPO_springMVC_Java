@@ -1,8 +1,8 @@
 package com.internship.backend.exception;
 
-public class PatientNotFoundException extends RuntimeException{
+public class patientNotFoundException extends RuntimeException{
 
-    public PatientNotFoundException(long id){
+    public patientNotFoundException(long id){
         super("Could not found this Patient with this HN ===> " + id);
     }
 }

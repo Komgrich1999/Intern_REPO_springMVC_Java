@@ -3,7 +3,7 @@ package com.internship.backend.model;
 import javax.persistence.*;
 
 @Entity
-public class Health_Center {
+public class healthCenter {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id ;

@@ -5,15 +5,15 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
-import com.internship.backend.exception.PatientNotFoundException;
+import com.internship.backend.exception.patientNotFoundException;
 
 @ControllerAdvice
-public class PatientNotFoundAdvice {
+public class patientNotFoundAdvice {
 
     @ResponseBody
-    @ExceptionHandler(PatientNotFoundException.class)
+    @ExceptionHandler(patientNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    String patientNotFoundHandler(PatientNotFoundException exception){
+    String patientNotFoundHandler(patientNotFoundException exception){
         return exception.getMessage();
     }
 }

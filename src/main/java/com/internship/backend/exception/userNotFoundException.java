@@ -1,7 +1,7 @@
 package com.internship.backend.exception;
 
-public class UserNotFoundException extends RuntimeException {
-    public UserNotFoundException(long id){
+public class userNotFoundException extends RuntimeException {
+    public userNotFoundException(long id){
         super("Could not found this User with this id ===> " + id);
     }
 }

@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Patient {
+public class patient {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -14,9 +14,9 @@ public class Patient {
     private String description;
     private boolean isAdmit ;
 
-    Patient(){ }
+    patient(){ }
 
-    public Patient(String description, boolean isAdmit){
+    public patient(String description, boolean isAdmit){
         this.description = description;
         this.isAdmit = isAdmit;
     }
